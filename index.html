@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ahmadiyya Chanda Calculator</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<img src="logo.jpg" height="100" width="100">
+	<h1>Ahmadiyya-GH Chanda Calculator</h1>
+	
+
+	<div>
+        <h2>
+		 Enter your Income here<input type="number" id="Income" />
+		</h2>
+
+		<h2><label> Choose from the options below</label></h2>
+			<select id="chanda" onchange="getSelectedChanda();">
+				<option value="Jalsa Salana">Jalsa Salana</option>
+				<option value="Wassiyat">Wassiyat</option>
+				<option value="Chanda Aam">Chanda Aam</option>
+			</select>
+
+	
+
+		<center><button onclick="GetChandaValue()">Calculate</button><br></center>
+		<input type="text" id="finaloutput" readonly  />
+
+
+
+
+		<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
